@@ -1,5 +1,5 @@
 function App() {
-  return <>WEB!!!</>;
+  return <div>App</div>;
 }
 
 export default App;
