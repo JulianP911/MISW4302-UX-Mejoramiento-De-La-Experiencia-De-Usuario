@@ -30,6 +30,9 @@ const colorPallet = {
 };
 
 export const theme = createTheme({
+  typography: {
+    fontFamily: ["Inter Variable", "sans-serif"].join(","),
+  },
   palette: colorPallet,
   colorSchemes: {
     light: {
