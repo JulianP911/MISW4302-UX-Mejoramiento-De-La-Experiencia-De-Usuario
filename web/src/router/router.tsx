@@ -3,12 +3,12 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import App from "src/App";
+import { LogIn } from "src/ui/screens/auth/logIn";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<LogIn />} />
     </Route>
   )
 );
