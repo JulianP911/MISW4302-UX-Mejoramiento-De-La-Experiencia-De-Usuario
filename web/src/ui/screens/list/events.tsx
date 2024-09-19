@@ -26,7 +26,7 @@ export const EventWithAlarms = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex justify-content-center">
-                                <Typography style={{paddingTop: '60px', fontSize: '34px', fontFamily: 'Inter, sans-serif'}}>17 de Octubre</Typography>
+                                <Typography style={{paddingTop: '60px', fontSize: '26px', fontFamily: 'Inter, sans-serif'}}>17 de Octubre</Typography>
                             </div>
                             <div className="d-flex justify-content-end" style={{paddingTop: '40px', paddingBottom: '40px'}}>
                                 <button type="button" onClick={handleFilterClick} className="btn" style={{background: '#566D92', width: '92px', height: '36px', color: '#FFFFFF', borderRadius: '4px',}}>Filtrar</button>
