@@ -1,15 +1,22 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Navigate,
   Route,
 } from "react-router-dom";
-import { LogIn } from "src/ui/screens/auth/logIn";
+import { StartLayout } from "src/ui/Layouts/startLayout";
 import { EventWithAlarms } from "src/ui/screens/list/events";
+import { Calendar } from "src/ui/screens/start/calendar";
+import { Start } from "src/ui/screens/start/start";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<LogIn />} />
+      <Route path="/" element={<Navigate to={"/start"} replace />} />
+      <Route element={<StartLayout />}>
+        <Route path="/start" element={<Start />} />
+        <Route path="/start/calendar" element={<Calendar />} />
+      </Route>
       <Route path="/events-with-alarms" element={<EventWithAlarms />} />
     </Route>
   )
