@@ -21,26 +21,30 @@ export const Start = () => {
             Te ofrecemos las siguientes opciones:
           </Typography>
         </div>
-        <Button
-          onClick={handleCreateCalendar}
-          variant="contained"
-          sx={{
-            minWidth: "289px",
-            mb: "24px",
-          }}
-        >
-          Crear Calendario
-        </Button>
-        <Button
-          color="secondary"
-          variant="contained"
-          sx={{
-            minWidth: "289px",
-            color: "white",
-          }}
-        >
-          Vincular Calendario
-        </Button>
+        <div className="flex flex-col items-center">
+          <Button
+            onClick={handleCreateCalendar}
+            variant="contained"
+            sx={{
+              minWidth: "289px",
+              maxWidth: "289px",
+              mb: "24px",
+            }}
+          >
+            Crear Calendario
+          </Button>
+          <Button
+            color="secondary"
+            variant="contained"
+            sx={{
+              minWidth: "289px",
+              maxWidth: "289px",
+              color: "white",
+            }}
+          >
+            Vincular Calendario
+          </Button>
+        </div>
       </div>
     </div>
   );
