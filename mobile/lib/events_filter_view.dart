@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile/utils/utils.dart';
 
 class EventsFilterView extends StatelessWidget {
   const EventsFilterView({super.key});
@@ -17,14 +18,6 @@ class EventsFilterView extends StatelessWidget {
     return DecoratedBox(
       decoration: const BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(
-            16,
-          ),
-          topRight: Radius.circular(
-            16,
-          ),
-        ),
       ),
       child: Container(
         constraints: BoxConstraints(
@@ -149,21 +142,24 @@ class EventsFilterView extends StatelessWidget {
                                   height: 45,
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      border: const OutlineInputBorder(),
                                       labelText: 'Fecha',
                                       hintText: 'Ingrese la fecha',
-                                      labelStyle: GoogleFonts.inter(
-                                        fontSize: 16,
-                                        color: const Color(0xFF5036AF),
+                                      labelStyle: TextStyle(
+                                        color: CustomColors.primary[400],
                                       ),
                                       hintStyle: GoogleFonts.inter(
                                         fontSize: 16,
                                         color: const Color(0xFF5036AF),
                                       ),
-                                      enabledBorder: const OutlineInputBorder(
+                                      border: const OutlineInputBorder(),
+                                      enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6A50C9),
-                                          width: 1,
+                                          color: CustomColors.primary[400]!,
+                                        ),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: CustomColors.primary[400]!,
                                         ),
                                       ),
                                     ),
@@ -178,21 +174,24 @@ class EventsFilterView extends StatelessWidget {
                                   height: 45,
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      border: const OutlineInputBorder(),
                                       labelText: 'Hora',
                                       hintText: 'Ingrese la hora',
-                                      labelStyle: GoogleFonts.inter(
-                                        fontSize: 16,
-                                        color: const Color(0xFF5036AF),
+                                      labelStyle: TextStyle(
+                                        color: CustomColors.primary[400],
                                       ),
                                       hintStyle: GoogleFonts.inter(
                                         fontSize: 16,
                                         color: const Color(0xFF5036AF),
                                       ),
-                                      enabledBorder: const OutlineInputBorder(
+                                      border: const OutlineInputBorder(),
+                                      enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6A50C9),
-                                          width: 1,
+                                          color: CustomColors.primary[400]!,
+                                        ),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: CustomColors.primary[400]!,
                                         ),
                                       ),
                                     ),
@@ -214,21 +213,24 @@ class EventsFilterView extends StatelessWidget {
                                   height: 45,
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      border: const OutlineInputBorder(),
                                       labelText: 'Día',
                                       hintText: 'Ingrese la fecha',
-                                      labelStyle: GoogleFonts.inter(
-                                        fontSize: 16,
-                                        color: const Color(0xFF6A50C9),
+                                      labelStyle: TextStyle(
+                                        color: CustomColors.primary[400],
                                       ),
                                       hintStyle: GoogleFonts.inter(
                                         fontSize: 16,
                                         color: const Color(0xFF5036AF),
                                       ),
-                                      enabledBorder: const OutlineInputBorder(
+                                      border: const OutlineInputBorder(),
+                                      enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6A50C9),
-                                          width: 1,
+                                          color: CustomColors.primary[400]!,
+                                        ),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: CustomColors.primary[400]!,
                                         ),
                                       ),
                                     ),

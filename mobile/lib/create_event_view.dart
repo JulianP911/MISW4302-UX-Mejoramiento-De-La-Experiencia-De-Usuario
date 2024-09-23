@@ -14,7 +14,7 @@ class _CreateEventViewState extends State<CreateEventView> {
   late TimeOfDay eventTime;
   late TextEditingController eventHourController;
   late String selectedAlarm;
-  List<DropdownMenuItem<String>> alarms = <String>['Ring Bells', 'Alert 1']
+  List<DropdownMenuItem<String>> alarms = <String>['Ring Bells', 'Pop Champs']
       .map<DropdownMenuItem<String>>((String value) {
     return DropdownMenuItem<String>(
       value: value,
@@ -78,7 +78,7 @@ class _CreateEventViewState extends State<CreateEventView> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/background_events.png'),
+                image: AssetImage('assets/background_add_and_edit_event.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -157,31 +157,39 @@ class _CreateEventViewState extends State<CreateEventView> {
                     style: GoogleFonts.inter(
                       fontSize: 14,
                       color: CustomColors.primary[500],
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 16,
+                  height: 72,
                 ),
-                ElevatedButton(
+                Align(
+                  alignment: Alignment.center,
+                  child: ElevatedButton(
                     style: ButtonStyle(
-                      foregroundColor: MaterialStateProperty.all<Color>(
-                        CustomColors.primary[400]!,
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4),
+                        ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        CustomColors.primary[400]!,
-                      ),
+                      backgroundColor:
+                          MaterialStateProperty.all(const Color(0xFF546D92)),
+                      minimumSize:
+                          MaterialStateProperty.all(const Size(161, 36)),
                     ),
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Text(
-                      'Crear Evento',
+                      'CREAR EVENTO',
                       style: GoogleFonts.inter(
                         fontSize: 14,
                         color: Colors.white,
                       ),
-                    ))
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

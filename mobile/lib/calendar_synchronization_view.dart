@@ -15,7 +15,9 @@ class CalendarSynchronizarionView extends StatelessWidget {
             color: const Color(0xFF090C10),
           ),
         ),
+        backgroundColor: Colors.transparent,
         centerTitle: true,
+        elevation: 0,
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -24,7 +26,8 @@ class CalendarSynchronizarionView extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                    'assets/backgroung_calendar_synchronization.png'),
+                  'assets/backgroung_calendar_synchronization.png',
+                ),
                 fit: BoxFit.cover,
               ),
             ),

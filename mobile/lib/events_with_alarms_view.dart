@@ -134,6 +134,11 @@ class EventsWithAlarmsView extends StatelessWidget {
                         showModalBottomSheet(
                           context: context,
                           isScrollControlled: true,
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.vertical(
+                              top: Radius.circular(16),
+                            ),
+                          ),
                           builder: (BuildContext context) {
                             return const EventsFilterView();
                           },
@@ -182,20 +187,6 @@ class EventsWithAlarmsView extends StatelessWidget {
                               }
                             : null,
                         child: Slidable(
-                          startActionPane: ActionPane(
-                            motion: const ScrollMotion(),
-                            children: <Widget>[
-                              SlidableAction(
-                                autoClose: true,
-                                onPressed: (BuildContext context) {},
-                                backgroundColor: Colors.transparent,
-                                foregroundColor: const Color(0xFF1B123A),
-                                label: 'EDITAR',
-                                padding: EdgeInsets.zero,
-                                spacing: 0,
-                              ),
-                            ],
-                          ),
                           endActionPane: ActionPane(
                             motion: const ScrollMotion(),
                             children: <Widget>[
