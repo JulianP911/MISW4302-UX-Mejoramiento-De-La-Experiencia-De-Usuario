@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile/events_filter_view.dart';
+import 'package:mobile/utils/utils.dart';
 
 class EventsWithAlarmsView extends StatelessWidget {
   const EventsWithAlarmsView({super.key});
@@ -32,6 +33,48 @@ class EventsWithAlarmsView extends StatelessWidget {
         '15:35 p.m.',
         '18:50 p.m.'
       ];
+
+  Future<void> showDecisionModalForDelete(
+      BuildContext context, int index) async {
+    String event = eventsNames[index];
+    return showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: const Text('Eliminar evento'),
+            content: Text(
+              '¿Estás seguro de eliminar este evento "$event" con su(s) alarma(s) asociadas?',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.inter(
+                fontSize: 14,
+                color: CustomColors.primary[300],
+              ),
+            ),
+            actions: [
+              TextButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all(CustomColors.primary[300]!),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('CANCELAR'),
+              ),
+              TextButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all(CustomColors.secondary[500]!),
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('ELIMINAR'),
+              ),
+            ],
+          );
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -132,75 +175,85 @@ class EventsWithAlarmsView extends StatelessWidget {
                         left: 16,
                         right: 16,
                       ),
-                      child: Slidable(
-                        startActionPane: ActionPane(
-                          motion: const ScrollMotion(),
-                          children: <Widget>[
-                            SlidableAction(
-                              autoClose: true,
-                              onPressed: (BuildContext context) {},
-                              backgroundColor: Colors.transparent,
-                              foregroundColor: const Color(0xFF1B123A),
-                              label: 'EDITAR',
-                              padding: EdgeInsets.zero,
-                              spacing: 0,
-                            ),
-                          ],
-                        ),
-                        endActionPane: ActionPane(
-                          motion: const ScrollMotion(),
-                          children: <Widget>[
-                            SlidableAction(
-                              autoClose: true,
-                              onPressed: (BuildContext context) {},
-                              backgroundColor: Colors.transparent,
-                              foregroundColor: const Color(0xFF1B123A),
-                              label: 'ELIMINAR',
-                              padding: EdgeInsets.zero,
-                              spacing: 0,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              eventsNames[index],
-                              style: GoogleFonts.inter(
-                                fontSize: 16,
-                                color: const Color(0xFF090C10),
+                      child: InkWell(
+                        onTap: index == 0
+                            ? () {
+                                Navigator.pushNamed(context, '/edit_event');
+                              }
+                            : null,
+                        child: Slidable(
+                          startActionPane: ActionPane(
+                            motion: const ScrollMotion(),
+                            children: <Widget>[
+                              SlidableAction(
+                                autoClose: true,
+                                onPressed: (BuildContext context) {},
+                                backgroundColor: Colors.transparent,
+                                foregroundColor: const Color(0xFF1B123A),
+                                label: 'EDITAR',
+                                padding: EdgeInsets.zero,
+                                spacing: 0,
                               ),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  eventsDescription[index],
-                                  style: GoogleFonts.inter(
-                                    fontSize: 14,
-                                    color: const Color(0xFF6D86AB),
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                Text(
-                                  eventsTime[index],
-                                  style: GoogleFonts.inter(
-                                    fontSize: 12,
-                                    color: const Color(0xFF3E2A88),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            const Opacity(
-                              opacity: 0.2,
-                              child: Divider(
-                                color: Color(0xFF212121),
+                            ],
+                          ),
+                          endActionPane: ActionPane(
+                            motion: const ScrollMotion(),
+                            children: <Widget>[
+                              SlidableAction(
+                                autoClose: true,
+                                onPressed: (BuildContext context) {
+                                  showDecisionModalForDelete(context, index);
+                                },
+                                backgroundColor: Colors.transparent,
+                                foregroundColor: const Color(0xFF1B123A),
+                                label: 'ELIMINAR',
+                                padding: EdgeInsets.zero,
+                                spacing: 0,
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                eventsNames[index],
+                                style: GoogleFonts.inter(
+                                  fontSize: 16,
+                                  color: const Color(0xFF090C10),
+                                ),
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    eventsDescription[index],
+                                    style: GoogleFonts.inter(
+                                      fontSize: 14,
+                                      color: const Color(0xFF6D86AB),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  Text(
+                                    eventsTime[index],
+                                    style: GoogleFonts.inter(
+                                      fontSize: 12,
+                                      color: const Color(0xFF3E2A88),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              const Opacity(
+                                opacity: 0.2,
+                                child: Divider(
+                                  color: Color(0xFF212121),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     );
@@ -212,7 +265,9 @@ class EventsWithAlarmsView extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/create_event');
+        },
         backgroundColor: const Color(0xFF8B77D5),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
