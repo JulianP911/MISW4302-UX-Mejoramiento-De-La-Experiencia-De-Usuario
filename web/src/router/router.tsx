@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import { StartLayout } from "src/ui/Layouts/startLayout";
+import { Dashboard } from "src/ui/screens/analytics/dashboard";
 import { EventWithAlarms } from "src/ui/screens/list/events";
 import { Calendar } from "src/ui/screens/start/calendar";
 import { Start } from "src/ui/screens/start/start";
@@ -18,6 +19,7 @@ export const router = createBrowserRouter(
         <Route path="/start/calendar" element={<Calendar />} />
       </Route>
       <Route path="/events-with-alarms" element={<EventWithAlarms />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Route>
   )
 );
