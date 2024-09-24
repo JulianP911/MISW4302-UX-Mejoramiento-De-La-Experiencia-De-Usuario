@@ -1,8 +1,17 @@
 import { Typography } from "@mui/material";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 export function Drawer() {
-    function handleLogOutClick(): void {}
+    const navigate = useNavigate();
+    function handleLogOutClick(): void {
+      navigate("/");
+    }
+    function handleCreateEventClick(): void {
+      navigate("/create-event");
+    }
+    function handleDashbaoardClick(): void {
+      navigate("/dashboard");
+    }
 
     return (
     <div className="container-fluid">
@@ -30,25 +39,33 @@ export function Drawer() {
             </div>
             <div style={{ height: "64px" }}></div>
             <div>
-              <Typography
-                style={{
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  fontFamily: "Inter, sans-serif",
-                }}
+              <a
+              onClick={handleCreateEventClick}
               >
-                CREAR EVENTO
-              </Typography>
+                <Typography
+                  style={{
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
+                  CREAR EVENTO
+                </Typography>
+              </a>
               <div style={{ height: "32px" }}></div>
-              <Typography
-                style={{
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  fontFamily: "Inter, sans-serif",
-                }}
+              <a
+              onClick={handleDashbaoardClick}
               >
-                ESTADÍSTICAS
-              </Typography>
+                <Typography
+                  style={{
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
+                  ESTADÍSTICAS
+                </Typography>
+              </a>
             </div>
           </div>
           <div style={{ paddingBottom: "41px" }}>

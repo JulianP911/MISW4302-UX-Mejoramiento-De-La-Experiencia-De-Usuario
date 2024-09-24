@@ -7,6 +7,7 @@ import {
 import { Drawer } from "src/ui/Layouts/drawer";
 import { StartLayout } from "src/ui/Layouts/startLayout";
 import { Dashboard } from "src/ui/screens/analytics/dashboard";
+import { CreateEvent } from "src/ui/screens/create/event";
 import { EventWithAlarms } from "src/ui/screens/list/events";
 import { Calendar } from "src/ui/screens/start/calendar";
 import { Start } from "src/ui/screens/start/start";
@@ -22,6 +23,7 @@ export const router = createBrowserRouter(
       <Route element={<Drawer />}>
         <Route path="/events-with-alarms" element={<EventWithAlarms />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/create-event" element={<CreateEvent />}></Route>
       </Route>
     </Route>
   )
