@@ -1,15 +1,20 @@
 import { Button } from "@mui/material";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { FooterWave } from "../components/footerWave";
 import { useState } from "react";
 
 export function StartLayout() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+  const navigate = useNavigate();
+  
   window.addEventListener("resize", () => {
     setScreenWidth(window.innerWidth);
   });
+
+  function handleLogOutClick(): void {
+    navigate("/");
+  }
 
   return (
     <div className="min-h-screen">
@@ -24,6 +29,7 @@ export function StartLayout() {
               sx={{
                 minWidth: "160px",
               }}
+              onClick={handleLogOutClick}
             >
               Salir
             </Button>
