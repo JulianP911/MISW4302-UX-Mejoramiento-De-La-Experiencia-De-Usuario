@@ -78,5 +78,6 @@ Adicionalmente, si se requiere generar el apk de la aplicación mobile utilizar 
 
 ### Video demo funcional mobile
 
-A continuación se presenta el enlace que lleva al video demo funcional de la aplicación mobile: 
+A continuación se presenta el video demo funcional de la aplicación mobile: 
 
+https://github.com/user-attachments/assets/e26fc2a9-504a-4d89-8a9d-e6e9c3dd526c
