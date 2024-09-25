@@ -78,6 +78,5 @@ Adicionalmente, si se requiere generar el apk de la aplicación mobile utilizar 
 
 ### Video demo funcional mobile
 
-A continuación se presenta el video demo funcional de la aplicación mobile: 
+A continuación se presenta el enlace hacia el video demo funcional de la aplicación mobile: [Video demo mobile - Up to date at work's](https://uniandes-my.sharepoint.com/:v:/g/personal/j_padilla_uniandes_edu_co/EZTCVpvm-6VFkrCVgAo3T_UBaQnGWztTHHvmll8D7uVddQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WKexGX)
 
-https://github.com/user-attachments/assets/e26fc2a9-504a-4d89-8a9d-e6e9c3dd526c
