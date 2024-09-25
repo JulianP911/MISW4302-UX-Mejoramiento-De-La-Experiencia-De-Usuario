@@ -37,15 +37,46 @@ Para correr la aplicación web "Up to date at work's" se debe seguir los siguien
 
 ### Video demo funcional web
 
+A continuación se presenta el enlace que lleva al video demo funcional de la aplicación web: 
+
 ## Mobile - Front End
 
 ### Prerequisito
 
 * Tener en el computador el framework <code>flutter</code> instalado.
-
+  * Instalar flutter en Windows:
+    * Descarga el archivo comprimido desde el sitio oficial:<br/>
+      https://docs.flutter.dev/get-started/install
+    * Extraer el contenido del archivo .zip en una ubicación de preferencia.
+    * Abrir el panel de control y dirigirse a la opción "Sistema" → "Configuración avanzada del sistema" → "Variables de entorno".
+    * En las variables del sistema buscar Path y selecciona "Editar".
+    * Agregar la ruta donde está Flutter: C:\src\flutter\bin.
+  * Instalar flutter en macOS:
+    * Requisitos previos:
+      * Tener Xcode instalado para compilar aplicaciones iOS.
+      * Tener Homebrew instalado.
+    * Abrir una terminal y ejecutar el siguiente comando para clonar Flutter:<br/>
+      <code>git clone https://github.com/flutter/flutter.git -b stable</code>
+    * Agregar la variable de entorno de Flutter al PATH:<br/>
+      <code>export PATH="$PATH:[ruta_a_flutter donde se descargo]/flutter/bin"</code>
+   * Instalar Android Studio:
+    * Descargar e instalar Android Studio desde:<br/>
+      https://developer.android.com/studio
+    * Instalar el plugin de Flutter desde el menú de <code>Plugins</code>.
+    * Configurar los SDKs de Android y crear un emulador.
 
 ### Ejecución aplicación mobile
 
+Para correr la aplicación mobile "Up to date at work's" se debe seguir los siguientes pasos (comandos):
+
+1. Ubicarse en la carpeta <code>mobile</code> dentro del repositorio clonado previamente.
+2. Abrir la terminal integrada en el editor de código seleccionado se recomienda utilizar <code>visual studio code</code>.
+3. Ingresar el comando <code>flutter pub get</code> para instalar las dependencias necesarias del proyecto de flutter.
+4. Ingresar el comando <code>flutter run lib/main.dart</code> para correr el proyecto de flutter.
+
+Adicionalmente, si se requiere generar el apk de la aplicación mobile utilizar el comando <code>flutter build apk --release</code>
+
 ### Video demo funcional mobile
 
+A continuación se presenta el enlace que lleva al video demo funcional de la aplicación mobile: 
 
