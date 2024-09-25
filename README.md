@@ -39,3 +39,13 @@ Para correr la aplicación web "Up to date at work's" se debe seguir los siguien
 
 ## Mobile - Front End
 
+### Prerequisito
+
+* Tener en el computador el framework <code>flutter</code> instalado.
+
+
+### Ejecución aplicación mobile
+
+### Video demo funcional mobile
+
+
