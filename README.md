@@ -37,7 +37,7 @@ Para correr la aplicación web "Up to date at work's" se debe seguir los siguien
 
 ### Video demo funcional web
 
-A continuación se presenta el enlace que lleva al video demo funcional de la aplicación web: [Video demo web - Up to date at work's](https://uniandes-my.sharepoint.com/:v:/g/personal/j_padilla_uniandes_edu_co/EWzRvvfPiIlFlK5wWXKUGCQBbc9eT5Su8sBYmC0tExJJbA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Z6GgSz)
+A continuación, se presenta el enlace que lleva al video demo funcional de la aplicación web: [Video demo web - Up to date at work's](https://uniandes-my.sharepoint.com/:v:/g/personal/j_padilla_uniandes_edu_co/EWzRvvfPiIlFlK5wWXKUGCQBbc9eT5Su8sBYmC0tExJJbA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Z6GgSz)
 
 ## Mobile - Front End
 
@@ -78,5 +78,8 @@ Adicionalmente, si se requiere generar el apk de la aplicación mobile utilizar 
 
 ### Video demo funcional mobile
 
-A continuación se presenta el enlace que lleva al video demo funcional de la aplicación mobile: [Video demo mobile - Up to date at work's](https://uniandes-my.sharepoint.com/:v:/g/personal/j_padilla_uniandes_edu_co/EZTCVpvm-6VFkrCVgAo3T_UBaQnGWztTHHvmll8D7uVddQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WKexGX)
+A continuación, se presenta el enlace que lleva al video demo funcional de la aplicación mobile: [Video demo mobile - Up to date at work's](https://uniandes-my.sharepoint.com/:v:/g/personal/j_padilla_uniandes_edu_co/EZTCVpvm-6VFkrCVgAo3T_UBaQnGWztTHHvmll8D7uVddQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WKexGX)
 
+### APK aplicación mobile
+
+A continuación, se presenta el enlace para descargar el apk de la aplicación mobile: [APK - Up to date at work's](https://uniandes-my.sharepoint.com/:u:/g/personal/j_padilla_uniandes_edu_co/EVwiGZiWWllAkP2LPpevnswBPjmN7-FE31XorwD_HmneHw?e=2qUYQm)
