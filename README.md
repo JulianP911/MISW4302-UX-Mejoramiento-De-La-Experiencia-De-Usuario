@@ -1,4 +1,4 @@
-# Entrega maquetación de Front End
+# Entrega Maquetación Front End
 
 Objetivo de la entrega:
 * Desarrollar en código los mockups elaborados con la herramienta Figma para un entorno mobile y web.
